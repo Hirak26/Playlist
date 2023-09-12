@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbarCSS.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="main-head">
+        <nav class="main-nav">
+            
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="store.html"> Store</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="register.html"> Register</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li><a href="contact.html"> Contact Us</a></li>
+             
+        </nav>
+        
+        <h1>Playlist</h1>
+        
+    </header>
+
+    <!-- login Form -->
+    <div class="container-fluid login">
+        <div class="container-sm">
+            <form action="login.php" class="form" method="post">
+                <div class="header">
+
+                    <!-- for tht dummy human  -->
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+                        class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                        </path>
+                    </svg>
+                    <h2>Login</h2>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="useremail" id="useremail" required>
+                    <label for="useremail">Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="userpassword" id="userpassword" required>
+                    <label for="userpassword">Password</label>
+                    <p>
+                        <!-- it will take to register.php page if create account is been clicked -->
+                        <a href="register.php" class="link-warning text-decoration-none">Create Account</a><br>
+
+                        <!-- it wont take anywhere if forgot password is being clicked  -->
+                        <a href="#">Forgot Password?</a>
+                    </p>
+                </div>
+
+                <!-- 2 buttons login and back -->
+                <!-- if proper usermail id and password entered thn the page will redirect to index.php page and if anything is wrong thn the page will reload and stay thr only -->
+                <div class="btns row">
+                    <input type="submit" value="Login" class="btn-primary col-sm-4">
+                    <a class="btn-danger col-sm-4" href="index.php">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- login Form End -->
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h4>Playlist - social</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/hirakmodi26/"><img class="social" src="./images/Instagram_logo_2022.svg" width="30px" height="30px" alt="" srcset=""></a></li>
+                <li><a href="https://www.youtube.com/"><img class="social" src="./images/youtube icon.webp" width="30px" height="30px" alt="" srcset=""></a></li>
+            </ul>
+        </div>
+    </footer>
+        <!-- Footer -->
+        <!-- require statement is also used to include a file into the PHP code. -->
+        <!-- there is one big difference between include and require; when a file is included with the include statement and PHP cannot find it, the script will continue to execute: -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
